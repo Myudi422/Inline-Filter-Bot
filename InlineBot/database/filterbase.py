@@ -8,7 +8,7 @@ from . import DB_URI, DB_NAME
 dbclient = pymongo.MongoClient(DB_URI)
 database = dbclient[DB_NAME]
 
-filter_collection = database['filters']
+filter_collection = database['Telegram_files']
 
 async def add_filter(text, reply_text, btn, file, alert, msg_type, id):
     
